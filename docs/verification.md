@@ -1,19 +1,24 @@
-# Kiểm tra demo — 02/10/2026
+# Kiểm tra demo — 06/10/2026
 
-Kiểm tra bằng Chrome headless / Playwright với server localhost, sau đó khôi phục dữ liệu mẫu trong browser kiểm thử.
+Đối chiếu `figma-eventpulse2.pdf` (17 trang). Kiểm tra bằng Chrome headless / Playwright trên HTTP server localhost, với dữ liệu kiểm thử tách khỏi trình duyệt người dùng.
 
-- 16 màn hình tải thành công; không ghi nhận JavaScript page error hoặc HTTP lỗi.
-- Cả 16 trang kiểm tra ở 390, 768 và 1440 px: không tràn ngang toàn trang.
-- Đã xem ảnh chụp danh mục desktop và mobile.
-- Gợi ý Product → chấp nhận session → lưu agenda.
-- Thêm/bỏ agenda, tham gia danh sách chờ; tạo lịch trùng và áp dụng Conflict Resolver.
-- Gửi phản hồi → hiển thị trong speaker insights.
-- Tạo session: chặn trùng phòng, cho phép khung giờ khác; reload vẫn giữ dữ liệu.
-- Tạo người dùng: chặn email trùng; tạo rồi xóa có xác nhận.
-- Interest Forecast → xem phòng phù hợp → áp dụng đổi phòng.
-- Lưu metadata tài liệu PDF.
-- Tạo nháp thông báo → phát hành → hiển thị trong hộp thông báo người tham dự.
-- Mở sidebar trên mobile.
-- `node --check` thành công với ba file JavaScript.
+- Trang chủ và 16 trang workspace tải thành công, không có lỗi JavaScript hoặc HTTP trong bộ kiểm tra chính.
+- Cả 17 trang ở 390, 768, 1440 px không tràn ngang toàn trang. Bảng rộng có vùng cuộn riêng.
+- Đã xem ảnh trang chủ desktop/mobile, catalog, analytics, speaker insights và forecast; sửa bố cục heatmap để bảng nằm trong cột chính.
+- Recommender: nhập Product → xem gợi ý → chấp nhận vào agenda.
+- Diễn giả: tạo session → gửi duyệt → không xuất hiện công khai; Ban tổ chức duyệt → xuất hiện trong catalog.
+- Feedback: gửi nhận xét → hiển thị ở insights → tạo AI Summary có nguồn → chấp nhận tóm tắt.
+- Tệp: tải PDF thử lên IndexedDB → xuất bản → hiển thị ở Chi tiết session → tải lại đúng tên; bản lưu trữ bị ẩn khỏi người tham dự.
+- Phòng: chặn giảm dưới số chỗ đã đặt; xem lịch; lưu trữ/khôi phục phòng trống.
+- Forecast: phân tích → chọn phòng đủ sức chứa/không trùng giờ → cập nhật session → tạo nháp thông báo.
+- Conflict Resolver: chuyển PMF sang bản ghi → bỏ chỗ trực tiếp; xuất lịch `.ics`.
+- Vé: chặn quota nhỏ hơn số đã bán; đổi giá không làm thay đổi doanh thu đã ghi nhận.
+- Tài khoản: khóa có lý do và giữ bản ghi.
+- Thông báo: gửi có xác nhận → hiển thị ở người tham dự.
+- Hồ sơ và cấu hình: đổi tên diễn giả/tên sự kiện → trang chủ nhận cùng dữ liệu.
+- Migration: dữ liệu v1 giữ agenda/tên sự kiện và chuyển id phản hồi cá nhân sang định dạng theo session.
+- Mobile: mở sidebar thành công. `node --check` đạt cho cả ba file JavaScript; `git diff --check` đạt.
 
-Giới hạn: chưa kiểm tra trên Safari/Firefox hoặc thiết bị thật; chưa có video OBS, backend hay xác minh Git/PR của nhóm. Kiểm tra responsive đo tràn toàn trang, không thay thế việc rà soát mọi nội dung trên mọi thiết bị.
+Ảnh hiện tại: [desktop](../design/mockups/desktop.png), [mobile](../design/mockups/mobile.png).
+
+Giới hạn xác minh: Chrome headless, chưa Safari/Firefox hoặc thiết bị thật. Chưa kiểm thử giới hạn file 200 MB, toàn bộ loại file, ảnh avatar 5 MB, mọi nhánh lịch gửi và mọi quyền tài liệu. Xuất PDF có CSS in, chưa xác minh bản PDF lưu bằng hộp thoại in. Chưa có backend, đăng nhập/MFA, gửi thông báo thật, video OBS hoặc deploy. Đối chiếu đầy đủ và giới hạn demo: [pdf-update.md](pdf-update.md).

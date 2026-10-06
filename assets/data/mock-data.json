@@ -12,10 +12,13 @@
       "booked": 86,
       "image": "ai",
       "date": "2026-10-19",
-      "status": "Đã duyệt",
-      "description": "Khám phá những bài học thực tiễn, case study triển khai tại Việt Nam và các công cụ có thể áp dụng ngay vào công việc. Cùng trao đổi với diễn giả và kết nối cộng đồng tại Vietnam Tech Summit 2026.",
+      "status": "Hoàn thành",
+      "description": "Khám phá tình huống triển khai thực tế tại Việt Nam, những quyết định trong thiết kế sản phẩm và các bài học dành cho đội ngũ liên chức năng. Cùng trao đổi với diễn giả và thực hành những công cụ có thể áp dụng ngay.",
       "saves": 106,
-      "feedbackCount": 22
+      "feedbackCount": 22,
+      "checkin": 112,
+      "interest": 164,
+      "public": true
     },
     {
       "id": 2,
@@ -30,9 +33,10 @@
       "image": "product",
       "date": "2026-10-19",
       "status": "Đã duyệt",
-      "description": "Khám phá những bài học thực tiễn, case study triển khai tại Việt Nam và các công cụ có thể áp dụng ngay vào công việc. Cùng trao đổi với diễn giả và kết nối cộng đồng tại Vietnam Tech Summit 2026.",
+      "description": "Khám phá tình huống triển khai thực tế tại Việt Nam, những quyết định trong thiết kế sản phẩm và các bài học dành cho đội ngũ liên chức năng. Cùng trao đổi với diễn giả và thực hành những công cụ có thể áp dụng ngay.",
       "saves": 167,
-      "feedbackCount": 8
+      "feedbackCount": 8,
+      "public": true
     },
     {
       "id": 3,
@@ -47,43 +51,47 @@
       "image": "fintech",
       "date": "2026-10-19",
       "status": "Đã duyệt",
-      "description": "Khám phá những bài học thực tiễn, case study triển khai tại Việt Nam và các công cụ có thể áp dụng ngay vào công việc. Cùng trao đổi với diễn giả và kết nối cộng đồng tại Vietnam Tech Summit 2026.",
+      "description": "Khám phá tình huống triển khai thực tế tại Việt Nam, những quyết định trong thiết kế sản phẩm và các bài học dành cho đội ngũ liên chức năng. Cùng trao đổi với diễn giả và thực hành những công cụ có thể áp dụng ngay.",
       "saves": 110,
-      "feedbackCount": 8
+      "feedbackCount": 8,
+      "public": true
     },
     {
       "id": 4,
-      "title": "AI Credit Scoring: Những bài học thực tế",
-      "topic": "AI & Data",
-      "speaker": "TS. Nguyễn Minh Anh",
+      "title": "Từ MVP đến Product-Market Fit",
+      "topic": "Product",
+      "speaker": "Vũ Thu Trang",
       "start": "13:45",
       "end": "14:45",
-      "room": "Aurora A",
-      "capacity": 120,
-      "booked": 68,
-      "image": "ai",
+      "room": "Studio 3",
+      "capacity": 60,
+      "booked": 42,
+      "image": "product",
       "date": "2026-10-19",
       "status": "Đã duyệt",
-      "description": "Khám phá những bài học thực tiễn, case study triển khai tại Việt Nam và các công cụ có thể áp dụng ngay vào công việc. Cùng trao đổi với diễn giả và kết nối cộng đồng tại Vietnam Tech Summit 2026.",
+      "description": "Khám phá tình huống triển khai thực tế tại Việt Nam, những quyết định trong thiết kế sản phẩm và các bài học dành cho đội ngũ liên chức năng. Cùng trao đổi với diễn giả và thực hành những công cụ có thể áp dụng ngay.",
       "saves": 88,
-      "feedbackCount": 8
+      "feedbackCount": 8,
+      "recording": true,
+      "public": true
     },
     {
       "id": 5,
-      "title": "Product discovery: Từ ý tưởng đến giá trị",
+      "title": "Data Storytelling",
       "topic": "Product",
-      "speaker": "Lê Hoàng Phúc",
-      "start": "15:00",
-      "end": "16:00",
-      "room": "Lotus Hall",
-      "capacity": 160,
+      "speaker": "Trần Thu Hà",
+      "start": "16:00",
+      "end": "17:00",
+      "room": "Studio 2",
+      "capacity": 80,
       "booked": 72,
       "image": "product",
       "date": "2026-10-19",
       "status": "Đã duyệt",
-      "description": "Khám phá những bài học thực tiễn, case study triển khai tại Việt Nam và các công cụ có thể áp dụng ngay vào công việc. Cùng trao đổi với diễn giả và kết nối cộng đồng tại Vietnam Tech Summit 2026.",
+      "description": "Khám phá tình huống triển khai thực tế tại Việt Nam, những quyết định trong thiết kế sản phẩm và các bài học dành cho đội ngũ liên chức năng. Cùng trao đổi với diễn giả và thực hành những công cụ có thể áp dụng ngay.",
       "saves": 92,
-      "feedbackCount": 8
+      "feedbackCount": 8,
+      "public": true
     },
     {
       "id": 6,
@@ -98,9 +106,67 @@
       "image": "fintech",
       "date": "2026-10-19",
       "status": "Đã duyệt",
-      "description": "Khám phá những bài học thực tiễn, case study triển khai tại Việt Nam và các công cụ có thể áp dụng ngay vào công việc. Cùng trao đổi với diễn giả và kết nối cộng đồng tại Vietnam Tech Summit 2026.",
+      "description": "Khám phá tình huống triển khai thực tế tại Việt Nam, những quyết định trong thiết kế sản phẩm và các bài học dành cho đội ngũ liên chức năng. Cùng trao đổi với diễn giả và thực hành những công cụ có thể áp dụng ngay.",
       "saves": 64,
-      "feedbackCount": 8
+      "feedbackCount": 8,
+      "public": true
+    },
+    {
+      "id": 7,
+      "title": "Giải thích mô hình cho đội ngũ sản phẩm",
+      "status": "Chờ duyệt",
+      "public": false,
+      "topic": "AI & Data",
+      "speaker": "TS. Nguyễn Minh Anh",
+      "date": "2026-10-20",
+      "start": "14:00",
+      "end": "14:45",
+      "room": "Aurora B",
+      "capacity": 90,
+      "booked": 0,
+      "saves": 0,
+      "feedbackCount": 0,
+      "image": "ai",
+      "description": "Case study về dữ liệu lệch, giả định sai và cách đội ngũ phục hồi. So sánh kiểm thử offline với quyết định sản phẩm trong thực tế.",
+      "takeaways": "Phát hiện dữ liệu lệch\nKiểm thử mô hình\nQuy trình phục hồi"
+    },
+    {
+      "id": 8,
+      "title": "AI Credit Scoring: Những bài học thất bại",
+      "status": "Bị từ chối",
+      "public": false,
+      "topic": "AI & Data",
+      "speaker": "TS. Nguyễn Minh Anh",
+      "date": "2026-10-20",
+      "start": "14:00",
+      "end": "14:45",
+      "room": "Aurora B",
+      "capacity": 90,
+      "booked": 0,
+      "saves": 0,
+      "feedbackCount": 0,
+      "image": "ai",
+      "description": "Case study về dữ liệu lệch, giả định sai và cách đội ngũ phục hồi. So sánh kiểm thử offline với quyết định sản phẩm trong thực tế.",
+      "takeaways": "Phát hiện dữ liệu lệch\nKiểm thử mô hình\nQuy trình phục hồi"
+    },
+    {
+      "id": 9,
+      "title": "AI Governance thực chiến",
+      "status": "Đã lưu trữ",
+      "public": false,
+      "topic": "AI & Data",
+      "speaker": "TS. Nguyễn Minh Anh",
+      "date": "2026-10-20",
+      "start": "14:00",
+      "end": "14:45",
+      "room": "Aurora B",
+      "capacity": 90,
+      "booked": 0,
+      "saves": 0,
+      "feedbackCount": 0,
+      "image": "ai",
+      "description": "Case study về dữ liệu lệch, giả định sai và cách đội ngũ phục hồi. So sánh kiểm thử offline với quyết định sản phẩm trong thực tế.",
+      "takeaways": "Phát hiện dữ liệu lệch\nKiểm thử mô hình\nQuy trình phục hồi"
     }
   ],
   "agenda": [
@@ -108,32 +174,115 @@
     2
   ],
   "waitlist": [],
-  "feedback": [],
-  "materials": [],
+  "feedback": [
+    {
+      "id": "FB-2031",
+      "sessionId": 1,
+      "rating": 5,
+      "comment": "Checklist giúp nhóm mình biết nên kiểm thử gì trước khi đưa AI vào sản phẩm.",
+      "status": "Đã gửi"
+    },
+    {
+      "id": "FB-2040",
+      "sessionId": 1,
+      "rating": 4,
+      "comment": "Ví dụ thực tế rất hữu ích. Mong có thêm thời gian Q&A và case dữ liệu Việt Nam.",
+      "status": "Đã gửi"
+    }
+  ],
+  "materials": [
+    {
+      "id": 220,
+      "name": "Responsible-AI-Keynote.pdf",
+      "size": 26004684,
+      "sessionId": 1,
+      "version": 3,
+      "status": "Đã xuất bản",
+      "access": "Người có vé",
+      "source": "sample"
+    },
+    {
+      "id": 221,
+      "name": "Checklist-risk-assessment.docx",
+      "size": 1258291,
+      "sessionId": 1,
+      "version": 2,
+      "status": "Bản nháp",
+      "access": "Người có vé",
+      "source": "sample"
+    },
+    {
+      "id": 222,
+      "name": "Bộ công cụ AI Transparency",
+      "url": "https://asterlabs.vn/toolkit",
+      "size": 0,
+      "sessionId": 1,
+      "version": 1,
+      "status": "Đã xuất bản",
+      "access": "Công khai"
+    },
+    {
+      "id": 223,
+      "name": "Responsible-AI-Keynote-old.pptx",
+      "size": 23802675,
+      "sessionId": 1,
+      "version": 1,
+      "status": "Đã lưu trữ",
+      "access": "Người có vé",
+      "source": "sample"
+    }
+  ],
   "profile": {
     "name": "TS. Nguyễn Minh Anh",
-    "email": "minhanh@example.com",
+    "email": "minhanh@asterlabs.vn",
     "position": "Head of Responsible AI · Aster Labs",
-    "bio": "12 năm xây dựng sản phẩm AI trong fintech, tập trung vào quản trị rủi ro, fairness và khả năng giải thích."
+    "bio": "12 năm xây dựng sản phẩm AI trong fintech, tập trung vào quản trị rủi ro, fairness và khả năng giải thích.",
+    "organization": "Aster Labs",
+    "linkedin": "https://linkedin.com/in/minh-anh-ai",
+    "website": "https://minhanh.ai",
+    "twitter": "",
+    "expertise": "AI Governance, Machine Learning, Fintech"
   },
   "rooms": [
     {
       "id": 1,
       "name": "Aurora A",
       "capacity": 120,
-      "location": "Tầng 2 · Khu Conference"
+      "location": "Tầng 2 · Khu Conference",
+      "equipment": "Máy chiếu 4K · 3 mic · Ghi hình",
+      "accessible": true
     },
     {
       "id": 2,
       "name": "Aurora B",
       "capacity": 90,
-      "location": "Tầng 2 · Khu Conference"
+      "location": "Tầng 2 · Khu Conference",
+      "equipment": "Máy chiếu 4K · 3 mic · Ghi hình",
+      "accessible": true
     },
     {
       "id": 3,
       "name": "Lotus Hall",
       "capacity": 160,
-      "location": "Tầng 1 · Khu Conference"
+      "location": "Tầng 1 · Khu Conference",
+      "equipment": "Máy chiếu 4K · 3 mic · Ghi hình",
+      "accessible": true
+    },
+    {
+      "id": 4,
+      "name": "Studio 2",
+      "capacity": 80,
+      "location": "Tầng 1 · Khu Conference",
+      "equipment": "Máy chiếu 4K · 3 mic · Ghi hình",
+      "accessible": true
+    },
+    {
+      "id": 5,
+      "name": "Studio 3",
+      "capacity": 60,
+      "location": "Tầng 1 · Khu Conference",
+      "equipment": "Máy chiếu 4K · 3 mic · Ghi hình",
+      "accessible": true
     }
   ],
   "alerts": [
@@ -143,58 +292,144 @@
       "message": "Check-in mở từ 08:00. Mang theo mã vé và đến phòng trước 10 phút.",
       "priority": "Thông tin",
       "status": "Đã gửi"
+    },
+    {
+      "id": 19,
+      "title": "Fintech chuyển sang Aurora B",
+      "message": "Session Fintech bắt đầu 13:30 tại Aurora B, tầng 2. Lịch cá nhân của bạn đã cập nhật.",
+      "priority": "Quan trọng",
+      "status": "Đã gửi",
+      "sessionId": 3,
+      "channels": "Push + Email",
+      "recipients": 90,
+      "delivered": 89
+    },
+    {
+      "id": 20,
+      "title": "Nhắc check-in phiên chiều",
+      "message": "Đến phòng trước 10 phút và chuẩn bị vé QR.",
+      "priority": "Thông tin",
+      "status": "Đã lên lịch",
+      "scheduledAt": "2026-10-19T15:00",
+      "channels": "Push + SMS"
     }
   ],
   "users": [
     {
       "id": 1,
-      "name": "Nguyễn Minh Anh",
-      "email": "minhanh@example.com",
+      "name": "TS. Nguyễn Minh Anh",
+      "email": "minhanh@asterlabs.vn",
       "role": "Diễn giả",
       "status": "Hoạt động"
     },
     {
       "id": 2,
-      "name": "Lê Hoàng Phúc",
-      "email": "phuc@example.com",
-      "role": "Diễn giả",
+      "name": "Trần Thu Hà",
+      "email": "ha.tran@eventpulse.vn",
+      "role": "Ban tổ chức",
       "status": "Hoạt động"
     },
     {
       "id": 3,
-      "name": "Nguyễn An",
-      "email": "an@example.com",
+      "name": "Lê Quốc Bảo",
+      "email": "bao.le@gmail.com",
       "role": "Người tham dự",
+      "status": "Chờ xác thực"
+    },
+    {
+      "id": 4,
+      "name": "Phạm Đức Long",
+      "email": "long.pham@agency.vn",
+      "role": "Người tham dự",
+      "status": "Đã khóa"
+    },
+    {
+      "id": 5,
+      "name": "Admin EventPulse",
+      "email": "admin@eventpulse.vn",
+      "role": "Quản trị viên",
       "status": "Hoạt động"
     }
   ],
   "tickets": [
     {
       "id": 1,
-      "name": "Standard",
-      "price": 299000,
+      "name": "Early Bird",
+      "price": 590000,
       "quantity": 500,
-      "status": "Đang bán"
+      "sold": 500,
+      "revenue": 295000000,
+      "status": "Đã hết",
+      "start": "2026-08-01T00:00",
+      "end": "2026-08-31T23:59"
     },
     {
       "id": 2,
-      "name": "VIP",
-      "price": 799000,
-      "quantity": 100,
-      "status": "Đang bán"
+      "name": "Standard",
+      "price": 890000,
+      "quantity": 700,
+      "sold": 525,
+      "revenue": 467250000,
+      "status": "Đang bán",
+      "start": "2026-09-01T00:00",
+      "end": "2026-10-17T23:59"
     },
     {
       "id": 3,
       "name": "Student",
-      "price": 99000,
-      "quantity": 200,
-      "status": "Đang bán"
+      "price": 390000,
+      "quantity": 250,
+      "sold": 180,
+      "revenue": 70200000,
+      "status": "Đang bán",
+      "start": "2026-09-01T00:00",
+      "end": "2026-10-17T23:59"
+    },
+    {
+      "id": 4,
+      "name": "VIP Experience",
+      "price": 1990000,
+      "quantity": 80,
+      "sold": 0,
+      "revenue": 0,
+      "status": "Tạm dừng",
+      "start": "2026-09-01T00:00",
+      "end": "2026-10-17T23:59"
     }
   ],
   "settings": {
     "event": "Vietnam Tech Summit 2026",
-    "location": "Hà Nội",
-    "notifications": true
+    "location": "Trung tâm Hội nghị Quốc gia · 57 Phạm Hùng, Hà Nội",
+    "notifications": true,
+    "start": "2026-10-18T08:00",
+    "end": "2026-10-20T18:00",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "language": "Tiếng Việt",
+    "integration": "Lỗi HTTP 401",
+    "mfa": true,
+    "anonymize": true
   },
-  "audit": []
+  "audit": [],
+  "preferences": {
+    "interests": "AI & Data, Product",
+    "goal": "Ứng dụng AI vào sản phẩm",
+    "level": "Trung cấp",
+    "date": "2026-10-19",
+    "start": "09:00",
+    "end": "17:30"
+  },
+  "notes": {},
+  "recordings": [],
+  "aiDrafts": {},
+  "summaries": {},
+  "questions": [
+    {
+      "id": 1,
+      "sessionId": 1,
+      "text": "Checklist nào phù hợp đội ngũ dưới 10 người?",
+      "votes": 14,
+      "answer": ""
+    }
+  ],
+  "forecasts": []
 }

@@ -52,7 +52,7 @@ EventPulse giải quyết những vấn đề này bằng cách xây dựng tr�
 - biểu đồ / dashboard thống kê cho quản trị viên;
 - responsive trên desktop, tablet và mobile;
 - dữ liệu giả lập bằng JSON / LocalStorage / mock data;
-- ít nhất 3 tính năng AI mô phỏng ở frontend.
+- 4 tính năng AI mô phỏng ở frontend.
 
 ## Tính năng AI mô phỏng
 
@@ -62,8 +62,11 @@ Gợi ý session phù hợp với sở thích và lịch trình cá nhân của 
 ### AI-2: Conflict Resolver
 Phát hiện lịch trình trùng lặp và đề xuất session thay thế hoặc bố trí tối ưu hơn.
 
-### AI-3: Interest Forecast
+### AI-3: Capacity Forecast
 Dự đoán session nào có khả năng thu hút nhiều người dựa trên dữ liệu giả lập.
+
+### AI-4: Feedback Summary
+Tổng hợp phản hồi ẩn danh theo từ khóa, loại bản trùng, hiển thị nguồn; cho phép chấp nhận, sửa hoặc từ chối và nhập tóm tắt thủ công.
 
 ## Công nghệ sử dụng
 
@@ -102,7 +105,7 @@ Thông qua dự án này, nhóm mong muốn xây dựng một sản phẩm có t
 
 ## Chạy demo đã triển khai
 
-Không cần npm hoặc backend. Mở `index.html` trong trình duyệt, hoặc chạy từ thư mục dự án:
+Không cần npm hoặc backend. Chạy HTTP server từ thư mục dự án để dùng LocalStorage và IndexedDB trên cùng origin:
 
 ```bash
 python3 -m http.server 8080 --bind 127.0.0.1
@@ -113,11 +116,11 @@ Dùng menu **Chuyển vai trò demo** ở cuối sidebar để truy cập bốn 
 
 ### Cấu trúc triển khai
 
-- `index.html`: danh mục session, điểm vào ứng dụng.
-- `pages/`: 16 màn hình tương ứng bản `figma-eventpulse.pdf`.
+- `index.html`: trang chủ sự kiện riêng theo trang 1 PDF, điểm vào bốn workspace.
+- `pages/`: 16 màn hình workspace (4 trang mỗi vai trò), ngoài trang chủ; tương ứng bản `figma-eventpulse2.pdf`.
 - `css/style.css`, `css/responsive.css`: giao diện và responsive.
 - `js/api.js`: kho dữ liệu giả lập, LocalStorage, xuất CSV.
-- `js/modules/ai.js`: quy tắc mô phỏng ba tính năng AI.
+- `js/modules/ai.js`: quy tắc mô phỏng bốn tính năng AI.
 - `js/main.js`: render giao diện, điều hướng, validation và tương tác.
 - `assets/data/mock-data.json`: bản dữ liệu mẫu tham khảo. `js/api.js` chứa cùng dữ liệu để mở trực tiếp HTML mà không cần fetch. Khi thay seed, cập nhật cả hai file.
 - `assets/images/`: ba ảnh session trích xuất từ PDF Figma được cung cấp.
@@ -127,16 +130,21 @@ Dùng menu **Chuyển vai trò demo** ở cuối sidebar để truy cập bốn 
 1. Người tham dự: tìm/lọc session → xem chi tiết → thêm agenda → tham gia/hủy danh sách chờ khi hết chỗ → gửi/sửa/xóa phản hồi.
 2. AI Agenda Recommender: chọn “Xem gợi ý”, nhập `Product`, xem lý do rồi chấp nhận hoặc bỏ qua.
 3. Conflict Resolver: thêm hai phiên 13:30 và 13:45 (cần tăng sức chứa phiên Fintech trước, vì seed đã đầy) → vào Agenda → xem/áp dụng đề xuất.
-4. Diễn giả: sửa hồ sơ → xem session → chọn tài liệu → xem phản hồi trong insights.
-5. Ban tổ chức: thêm/sửa/hủy session, quản lý phòng → tạo nháp/phát hành thông báo → chạy dự báo → chấp nhận phương án đổi phòng phù hợp.
-6. Quản trị viên: CRUD loại vé/người dùng → xem analytics → sửa cấu hình và nhật ký.
-7. Dữ liệu giữ lại sau reload trên cùng origin. Khôi phục ở **Quản trị viên → Cấu hình & Audit → Khôi phục dữ liệu mẫu**.
+4. Diễn giả: sửa hồ sơ → xem session → chọn tài liệu → xem phản hồi trong Phân tích session.
+5. Ban tổ chức: thêm/sửa/lưu trữ session, quản lý phòng → tạo nháp/phát hành thông báo → chạy dự báo → chấp nhận phương án đổi phòng phù hợp.
+6. Quản trị viên: sửa giá/quota/cửa sổ bán vé → khóa/mở khóa người dùng → xem analytics → sửa cấu hình và nhật ký. Vé đã bán và doanh thu lịch sử được giữ nguyên.
+7. AI Summary: gửi phản hồi session AI đã hoàn thành → Diễn giả / Phân tích session → tạo tóm tắt → xem nguồn → chấp nhận hoặc chỉnh sửa.
+8. Dữ liệu giữ lại sau reload trên cùng origin. Khôi phục ở **Quản trị viên → Cấu hình & Audit → Khôi phục dữ liệu mẫu**.
 
 ### Giới hạn demo
 
 - Vai trò là bộ chuyển giao diện, không phải đăng nhập hay phân quyền bảo mật.
 - AI chạy bằng quy tắc JavaScript, không gọi mô hình hoặc API bên ngoài.
-- Tài liệu chỉ lưu metadata, không upload hay lưu nội dung tệp.
+- Tệp mới được lưu cục bộ bằng IndexedDB (PDF/PPT/PPTX/DOCX/MP4, tối đa 200 MB). Metadata nằm trong LocalStorage. Tài liệu mẫu trong PDF không có nội dung tệp để tải.
 - Vé chỉ quản lý loại vé, không xử lý thanh toán. Thông báo được mô phỏng trong trình duyệt.
 - Nếu LocalStorage không khả dụng hoặc hết dung lượng, ứng dụng báo lỗi và giữ dữ liệu trong phiên hiện tại.
 - Git/PR, phân công thực tế và video OBS cần nhóm thực hiện; demo không tạo bằng chứng giả.
+
+## Bản thiết kế mới (06/10/2026)
+
+Nguồn: [figma-eventpulse2.pdf](figma-eventpulse2.pdf), 17 trang. Đối chiếu chi tiết và giới hạn: [docs/pdf-update.md](docs/pdf-update.md). Dữ liệu demo dùng 9 session, 5 phòng, 5 tài khoản và 4 loại vé; các số đếm lấy từ dữ liệu hiện tại, không gắn cứng 48 session/1.482 tài khoản của bản mẫu. Nếu trình duyệt đang có dữ liệu v1, ứng dụng chuyển dữ liệu sang v2 và giữ thay đổi; dùng Khôi phục dữ liệu mẫu để xem seed mới.
